@@ -9,7 +9,6 @@ public class Inplace_merge {
             return;
         }
  
-
         while (start <= mid && start2 <= end) {
  
             if (arr[start] <= arr[start2]) {
@@ -24,13 +23,12 @@ public class Inplace_merge {
                     index--;
                 }
                 arr[start] = value;
-                 start++;
+                start++;
                 mid++;
                 start2++;
             }
         }
     }
- 
 
     static void mergeSort(int arr[], int l, int r)
     {
